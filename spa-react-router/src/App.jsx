@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { BrowserRouter, Routes, Route, Link } from 'react-router'
+import { BrowserRouter, Routes, Route } from 'react-router'
 import Header from './components/Header'
 import Home from './pages/Home'
 

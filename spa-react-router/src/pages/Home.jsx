@@ -27,7 +27,8 @@ export default function Home() {
                 setMovies(data.results);
             }
             catch (error) {
-                setError(error.message);
+                setError(error);
+                console.log(error);
             }
             finally {
                 setLoading(false);
@@ -40,6 +41,10 @@ export default function Home() {
 
     if (loading) {
         return <p>Loading...</p>;
+    }
+
+    if (error) {
+        return <p>Error: {error.message}</p>;
     }
 
     return (
