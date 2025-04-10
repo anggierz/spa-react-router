@@ -1,21 +1,21 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #EFE9E7; /* Fondo general claro */
-    color: #111344; /* Texto oscuro profundo */
+    background-color: #EFE9E7; 
+    color: #111344; 
   }
   
   h1 {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 2rem;
-    color: #52154E; /* Título violeta oscuro */
+    color: #52154E; 
   }
   
   p {
     text-align: center;
     font-size: 1.2rem;
-    color: #52154E; /* Subtítulo */
+    color: #52154E;
   }
   
   .container {
@@ -26,10 +26,15 @@ body {
     gap: 1.5rem;
     padding: 0 1rem;
   }
+
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+  }
   
   .movie {
-    background-color: #DAE0F2; /* Fondo azul pálido */
-    border: 2px solid #F9CFF2; /* Borde rosa pastel */
+    background-color: #DAE0F2; 
+    border: 2px solid #F9CFF2; 
     border-radius: 12px;
     padding: 1rem;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -40,18 +45,21 @@ body {
   
   .movie:hover {
     transform: scale(1.03);
-    box-shadow: 0 4px 20px rgba(82, 21, 78, 0.2); /* Violeta oscuro */
+    box-shadow: 0 4px 20px rgba(82, 21, 78, 0.2); 
   }
   
   .movie h2 {
     font-size: 1.3rem;
     color: #111344;
     margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
   }
   
   .movie p {
-    font-size: 0.95rem;
-    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
     margin: 0.3rem 0;
     color: #52154E;
   }

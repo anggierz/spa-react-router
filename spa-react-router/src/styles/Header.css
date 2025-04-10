@@ -1,5 +1,5 @@
 header {
-    background-color: #111344; /* Fondo azul oscuro */
+    background-color: #111344; 
     border-bottom: 2px solid #F9CFF2;
     padding: 1rem 2rem;
     display: flex;
@@ -11,7 +11,7 @@ header {
   }
   
   header h1 {
-    color: #F9CFF2; /* Rosa claro */
+    color: #F9CFF2;
     font-size: 1.8rem;
     margin: 0;
   }
@@ -30,7 +30,7 @@ header {
   
   nav a {
     text-decoration: none;
-    color: #DAE0F2; /* Azul pálido */
+    color: #DAE0F2;
     font-weight: 500;
     padding: 0.5rem 0.75rem;
     border-radius: 6px;
@@ -38,12 +38,12 @@ header {
   }
   
   nav a:hover {
-    background-color: #52154E; /* Violeta oscuro */
-    color: #EFE9E7; /* Texto claro */
+    background-color: #52154E;
+    color: #EFE9E7; 
   }
   
   nav a.active {
-    background-color: #F9CFF2; /* Activo rosa pastel */
+    background-color: #F9CFF2; 
     color: #111344;
   }
   

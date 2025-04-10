@@ -7,8 +7,7 @@ export default function Movie() {
     const [loading, setLoading] = useState(true);
 
     const token = import.meta.env.VITE_TMDB_TOKEN;
-
-
+    
     useEffect(() => {
         async function fetchMovie() {
             try {

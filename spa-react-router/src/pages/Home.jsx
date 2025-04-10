@@ -55,12 +55,12 @@ export default function Home() {
             <p>Find trending movies below. Click on a movie to see the details:</p>
             <div className="container">
             {movies.map(movie => (
-                <NavLink to={`/movie/${movie.id}`} key={movie.id}>
+                <NavLink to={`/movie/${movie.id}`} key={movie.id} className="nav-link">
                     <div className="movie" key={movie.id}>
                     <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title}/>
                     <h2>{movie.title}</h2>
                     <p>{movie.overview}</p>
-                    <p>Release: {movie.release_date}</p>
+                    <p>Release date: <strong> {movie.release_date}</strong></p>
                     </div>
                 </NavLink>
             ))}
