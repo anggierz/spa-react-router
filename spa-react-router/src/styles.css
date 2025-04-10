@@ -1,13 +1,21 @@
+:root {
+  --beige-color: #EFE9E7; 
+  --dark-blue: #111344;
+  --very-light-blue: #DAE0F2;
+  --pink: #F9CFF2;
+  --dark-purple: #52154E;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #EFE9E7; 
-    color: #111344; 
+    background-color: var(--beige-color); 
+    color: var(--dark-blue); 
   }
 
   header {
-    background-color: #111344; 
-    border-bottom: 2px solid #F9CFF2;
+    background-color: var(--dark-blue); 
+    border-bottom: 2px solid var(--pink);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -18,7 +26,7 @@ body {
   }
   
   header h1 {
-    color: #F9CFF2;
+    color: var(--pink);
     font-size: 1.8rem;
     margin: 0;
   }
@@ -37,7 +45,7 @@ body {
   
   nav a {
     text-decoration: none;
-    color: #DAE0F2;
+    color: var(--very-light-blue);
     font-weight: 500;
     padding: 0.5rem 0.75rem;
     border-radius: 6px;
@@ -45,13 +53,13 @@ body {
   }
   
   nav a:hover {
-    background-color: #52154E;
-    color: #EFE9E7; 
+    background-color: var(--dark-purple);
+    color: var(--beige-color); 
   }
   
   nav a.active {
-    background-color: #F9CFF2; 
-    color: #111344;
+    background-color: var(--pink); 
+    color: var(--dark-blue);
   }
   
   
@@ -59,13 +67,13 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 2rem;
-    color: #52154E; 
+    color: var(--dark-purple); 
   }
   
   p {
     text-align: center;
     font-size: 1.2rem;
-    color: #52154E;
+    color: var(--dark-purple);
   }
   
   .container {
@@ -83,8 +91,8 @@ body {
   }
   
   .movie {
-    background-color: #DAE0F2; 
-    border: 2px solid #F9CFF2; 
+    background-color: var(--very-light-blue); 
+    border: 2px solid var(--pink); 
     border-radius: 12px;
     padding: 1rem;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -100,7 +108,7 @@ body {
   
   .movie h2 {
     font-size: 1.3rem;
-    color: #111344;
+    color: var(--dark-blue);
     margin-bottom: 0.5rem;
     display: flex;
     justify-content: center;
@@ -111,7 +119,7 @@ body {
     justify-content: center;
     font-size: 0.8rem;
     margin: 0.3rem 0;
-    color: #52154E;
+    color: var(--dark-purple);
   }
   
   .movie img.movie-poster {
@@ -120,6 +128,92 @@ body {
     border-radius: 8px;
     margin-bottom: 0.8rem;
     object-fit: cover;
-    border: 1px solid #52154E;
+    border: 1px solid var(--dark-purple);
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .search-input {
+    width: 60%;
+    max-width: 400px;
+    padding: 0.6rem 1rem;
+    margin: 1rem 0.5rem 1rem 0;
+    border: 2px solid var(--dark-purple);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
   }
   
+  .search-input:focus {
+    outline: none;
+    border-color: var(--dark-purple);
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);
+  }
+  
+  .search-button {
+    padding: 0.6rem 1.5rem;
+    background-color: var(--dark-blue); 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: var(--dark-blue);
+  }
+  
+  .search-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+
+/* Styles for /movie/movieId page */
+  
+.movie-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--beige-color); 
+  border-radius: 1rem;
+}
+
+.movie-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #4b005f;
+  margin-bottom: 2rem;
+}
+
+.movie-detail-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.movie-poster {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.movie-info {
+  max-width: 600px;
+  color: #3a003a;
+}
+
+.movie-info .overview {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}

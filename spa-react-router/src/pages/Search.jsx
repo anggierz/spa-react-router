@@ -47,8 +47,10 @@ export default function Search() {
         <div>
             <h1>Search</h1>
             <p>Search for a movie.</p>
-            <input type="search" id="site-search" name="q" onChange={(e) => setQuery(e.target.value)} />
-            <button onClick={handleSearch} disabled={loading}>Search</button>
+            <div className="search-container">
+                <input type="search" id="site-search" name="q" className="search-input" onChange={(e) => setQuery(e.target.value)} />
+                <button onClick={handleSearch} className="search-button" disabled={loading}>Search</button>
+            </div>
             {loading && <p>Loading...</p>}
             {movies.length == 0 && !loading && !error && <p>No movies found.</p>}
             {error && <p style={{ color: "red" }}>{error}</p>}

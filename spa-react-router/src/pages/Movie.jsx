@@ -7,7 +7,7 @@ export default function Movie() {
     const [loading, setLoading] = useState(true);
 
     const token = import.meta.env.VITE_TMDB_TOKEN;
-    
+
     useEffect(() => {
         async function fetchMovie() {
             try {
@@ -49,12 +49,16 @@ export default function Movie() {
 
 
     return (
-        <div>
-            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title}/>
-            <h1>{movie.title}</h1>
-            <p>{movie.overview}</p>
-            <p>Release date: <strong>{movie.release_date}</strong></p>
-            <p>Vote count: <strong>{movie.vote_count}</strong> </p>
+        <div className="movie-container">
+            <h1 className="movie-title">{movie.title}</h1>
+            <div className="movie-detail-layout">
+                <img className="movie-poster" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title}/>
+            </div>
+            <div className="movie-info">
+                <p className="overview">{movie.overview}</p>
+                <p>Release date: <strong>{movie.release_date}</strong></p>
+                <p>Vote count: <strong>{movie.vote_count}</strong> </p>
+            </div>
         </div>
     );
 }
