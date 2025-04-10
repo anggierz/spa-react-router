@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
-import '../styles/Home.css';
 import { NavLink }  from "react-router";
 
 export default function Home() {
     const [movies, setMovies] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [query, setQuery] = useState('');
 
     const token = import.meta.env.VITE_TMDB_TOKEN;
 
