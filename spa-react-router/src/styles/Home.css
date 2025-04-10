@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EFE9E7; /* Fondo general claro */
+    color: #111344; /* Texto oscuro profundo */
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: #52154E; /* Título violeta oscuro */
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #52154E; /* Subtítulo */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .movie {
+    background-color: #DAE0F2; /* Fondo azul pálido */
+    border: 2px solid #F9CFF2; /* Borde rosa pastel */
+    border-radius: 12px;
+    padding: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .movie:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(82, 21, 78, 0.2); /* Violeta oscuro */
+  }
+  
+  .movie h2 {
+    font-size: 1.3rem;
+    color: #111344;
+    margin-bottom: 0.5rem;
+  }
+  
+  .movie p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0.3rem 0;
+    color: #52154E;
+  }
+  
+  .movie img.movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    object-fit: cover;
+    border: 1px solid #52154E;
+  }
+  
