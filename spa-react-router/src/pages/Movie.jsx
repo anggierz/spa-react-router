@@ -50,15 +50,13 @@ export default function Movie() {
 
     return (
         <div className="movie-container">
-            <h1 className="movie-title">{movie.title}</h1>
-            <div className="movie-detail-layout">
-                <img className="movie-poster" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title}/>
-            </div>
-            <div className="movie-info">
-                <p className="overview">{movie.overview}</p>
-                <p>Release date: <strong>{movie.release_date}</strong></p>
-                <p>Vote count: <strong>{movie.vote_count}</strong> </p>
-            </div>
+            <h1>{movie.title}</h1>
+            <img  src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title}/>
+            <p className="overview">{movie.overview}</p>
+            <p>Release date: <strong>{movie.release_date}</strong></p>
+            <p>Popularity: <strong>{movie.popularity}</strong></p>
+            <p>Vote count: <strong>{movie.vote_count}</strong> </p>
+            <p>Vote average: <strong>{movie.vote_average}</strong></p>
         </div>
     );
 }

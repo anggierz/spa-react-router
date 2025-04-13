@@ -57,7 +57,12 @@ export default function Home() {
                     <div className="movie" key={movie.id}>
                     <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title}/>
                     <h2>{movie.title}</h2>
-                    <p>{movie.overview}</p>
+                    <p>
+                        {
+                            movie.overview.length >= 150 ?
+                            `${movie.overview.substring(0, 150)}[...]` : movie.overview
+                        }
+                    </p>
                     <p>Release date: <strong> {movie.release_date}</strong></p>
                     </div>
                 </NavLink>
