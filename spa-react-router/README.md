@@ -28,7 +28,12 @@ cd spa-react-router/spa-react-router
 npm install
 ```
 
-### 3. Ejecutar la aplicación en modo desarrollo
+### 3. Configurar el archivo .env con el token de TMDB
+
+Puedes utilizar tu propio token o uno que proporcionaré aparte. Se debe configurar el token antes de ejecutar la aplicación
+ya que este se utiliza para las consultas de películas.
+
+### 4. Ejecutar la aplicación en modo desarrollo
 
 ```bash
 npm run dev
@@ -36,7 +41,7 @@ npm run dev
 
 La aplicación estará disponible en [http://localhost:5173](http://localhost:5173)
 
-### 4. Ejecutar pruebas
+### 5. Ejecutar pruebas
 
 > No se incluyen pruebas automatizadas. Puedes verificar el correcto funcionamiento de la app navegando por las rutas.
 
