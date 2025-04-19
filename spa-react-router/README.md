@@ -2,6 +2,9 @@
 
 Este proyecto es una aplicación SPA (Single Page Application) desarrollada en **React** utilizando **React Router** para la navegación. La aplicación permite a los usuarios explorar películas en tendencia, ver detalles individuales y navegar entre páginas sin recargar el navegador.
 
+🔗 **Versión SSR desplegada en Vercel:**  
+👉 [https://spa-react-router.vercel.app/](https://spa-react-router.vercel.app/)
+
 ## 📌 Descripción de la aplicación
 
 La aplicación **MovieDB** permite:
@@ -57,7 +60,7 @@ spa-react-router/
 │   ├── pages/              # Vistas de cada página principal
 │   ├── App.jsx             # Componente raíz con enrutamiento
 │   ├── main.jsx            # Punto de entrada de la app
-│   └── index.css           # Estilos globales
+│   └── styles.css           # Estilos globales
 │
 ├── .gitignore              # Archivos ignorados por Git
 ├── package.json            # Dependencias y scripts
